@@ -37,7 +37,7 @@ loss_fn = nn.CrossEntropyLoss()
 
 # Training flow 
 if __name__ == "__main__": 
-    for epoch in range(10): # train for 10 epochs
+    for epoch in range(30): # train for 10 epochs
         for batch in dataset: 
             X,y = batch 
             X, y = X.to('cuda'), y.to('cuda') 
